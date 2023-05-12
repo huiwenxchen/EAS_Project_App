@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Data
+{% endblock %} 
+
+
+{% block main %}
+  <!-- Background image -->
+  <div
+  id="bg_header"
+  class="p-5 text-center bg-image"
+  style="background-image: url('../static/free_chinese_art.avif');"
+  >
+  <div">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div style="color: #b95282;">
+        <h1 class="mb-3 serif"><em>Data</em></h1>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Background image -->
+
+  <img style="justify-content: center; max-width: 100%; height: 100%; display: block; margin: 0 auto;" src="data:image/png;base64,{{ chart }}" alt="Bar Chart">
+
+
+{% endblock %}
+
+

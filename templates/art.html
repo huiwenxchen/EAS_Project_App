@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Art
+{% endblock %} 
+
+
+{% block main %}
+<!-- Title -->
+<div class="container-fluid center" style="margin-bottom: 10vh;">
+  <h4> <em> {{ art[0]['Museum']}} </em></h4>
+  <h1 class="text-center serif">{{ art[0].Title }}</h1>
+
+  <!-- Image -->
+  <img src={{ art[0]['Image']}} style="margin-bottom: 2vh;"></img>
+  <h6> <span style="font-weight: bold;">Medium: </span> {{ art[0]['Art_Type']}}</h6>
+  <h6> <span style="font-weight: bold;">Culture:</span> {{ art[0]['Culture']}}</h6>
+</div>
+
+<!-- Content -->
+<div class="container-fluid center">
+	<div class="row">
+
+  <div class="col-md-3 col-sm-3  mx-auto">
+	<div class="wrimagecard wrimagecard-topimage">
+    <div class="wrimagecard-topimage_header" style="background-color:#5dabae">
+      <div class="center text-center" style="color: rgb(239, 255, 254);"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+        <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+      </svg><h5>Time Period</h5></div>
+    </div>
+    <div class="wrimagecard-topimage_title text-center">
+      <h6> {{ art[0]['Creation_Date']}}</h6>
+    </div>
+  </div>
+  </div>
+
+	<div class="col-md-3 col-sm-3  mx-auto">
+    <div class="wrimagecard wrimagecard-topimage text-center">
+      <div class="wrimagecard-topimage_header" style="background-color:#d3eeff ">
+        <div class="center"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+          <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+          <path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"/>
+        </svg><h5>Artist</h5></div>
+      </div>
+      <div class="wrimagecard-topimage_title">
+        <h6> {{ art[0]['Artist']}}</h6>
+      </div>
+  </div>
+  </div>
+
+	<div class="col-md-3 col-sm-3  mx-auto">
+    <div class="wrimagecard wrimagecard-topimage text-center">
+      <div class="wrimagecard-topimage_header" style="background-color:#fef6cf ">
+        <div class="center"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg><h5>Accession Number</h5></div>
+      </div>
+      <div class="wrimagecard-topimage_title">
+        <h6> {{ art[0]['Accession_Number']}}</h6>
+      </div>
+  </div>
+  </div>
+
+
+</div>
+</div>
+{% endblock %}

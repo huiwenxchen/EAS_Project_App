@@ -19,13 +19,13 @@ flask --debug run
 |___collections.db\
 |___static\
 |___templates\
-|   |___about.html\
-|   |___art.html\
-|   |___collections.html\
-|   |___data.html\
-|   |___error.html\
-|   |___index.html\
-|   |___layout.html\
+|___   |___about.html\
+|___   |___art.html\
+|___   |___collections.html\
+|___   |___data.html\
+|___   |___error.html\
+|___   |___index.html\
+|___   |___layout.html\
 
 
 ## App.py

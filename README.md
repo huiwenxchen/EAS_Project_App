@@ -19,9 +19,9 @@ flask --debug run
 |___collections.db\
 |___static\
 |___templates\
-|___   |___about.html\
-|___   |___art.html\
-|___   |___collections.html\
+|___|___about.html\
+|___|___art.html\
+|___|___collections.html\
 |___   |___data.html\
 |___   |___error.html\
 |___   |___index.html\

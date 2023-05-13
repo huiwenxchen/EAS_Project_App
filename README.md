@@ -26,7 +26,7 @@ flask --debug run
 |   |___error.html\
 |   |___index.html\
 |   |___layout.html\
-\
+
 
 ## App.py
 This file contains the Flask code for generating the app

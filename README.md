@@ -5,11 +5,18 @@ Final Project for EAS 143B
 To view a demo of the running app on the local host, please visit https://harvard.zoom.us/rec/share/wQPMCheYGh1Ea4v1bM21Ot6rruHk1w9rb9xcQPm3_39u2z5ZO9-DGHEBfkIYk6I.sH1BtdSemCurJ92v
 
 ## To run this application:
-
+First install the requirements by pasting the following code in the terminal:
+```
+pip3 install -r requirements.txt
+```
+Run the app: 
 ```
 flask --debug run
 ```
-
+you can also run the app using this code
+```
+python -m flask run
+```
 # Architecture
 
 |___README.md\
